@@ -1,18 +1,18 @@
 # AI-Chase-Game
 
-A grid-based chase game built with Python and Pygame where you navigate a maze to reach a goal while an AI hunts you down. The AI difficulty changes which pathfinding algorithm it uses — making it genuinely harder, not just faster.
+- A grid-based chase game built with Python and Pygame where you navigate a maze to reach a goal while an AI hunts you down. The AI difficulty changes which pathfinding algorithm it uses — making it genuinely harder, not just faster.
 
 
 
 Gameplay
 
-You control a black character on a grid. Reach the gold goal tile before the timer runs out — without getting caught by the green AI.
+- You control a black character on a grid. Reach the gold goal tile before the timer runs out — without getting caught by the green AI.
 
-Easy mode — The AI uses Greedy Best-First Search. It rushes toward you but gets confused by obstacles, so you can trick it.
+- Easy mode — The AI uses Greedy Best-First Search. It rushes toward you but gets confused by obstacles, so you can trick it.
 
-Hard mode — The AI uses A* Search. It always finds the shortest path. There's no fooling it.
+- Hard mode — The AI uses A* Search. It always finds the shortest path. There's no fooling it.
 
-The map is randomly generated every round, and the game guarantees a valid path always exists from the AI to you and from you to the goal.
+- The map is randomly generated every round, and the game guarantees a valid path always exists from the AI to you and from you to the goal.
 
 
 
@@ -30,6 +30,6 @@ Features
 
 How the Pathfinding Works?
 
-A* (Hard mode) uses f(n) = g(n) + h(n) — cost so far plus Manhattan distance to the goal. It always finds the optimal shortest path, so the AI will never waste a move.
+- A* (Hard mode) uses f(n) = g(n) + h(n) — cost so far plus Manhattan distance to the goal. It always finds the optimal shortest path, so the AI will never waste a move.
 
-Greedy Best-First Search (Easy mode) uses only h(n) — Manhattan distance to the goal, ignoring path cost. It moves toward you fast but can get stuck routing around obstacles, giving you windows to escape.
+- Greedy Best-First Search (Easy mode) uses only h(n) — Manhattan distance to the goal, ignoring path cost. It moves toward you fast but can get stuck routing around obstacles, giving you windows to escape.
